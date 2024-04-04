@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: black;
+}
+
+/*header*/
+
+header {
+  position: relative;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
+  z-index: -1;
+}
+
+.tittlesite {
+  font-size: 65px;
+}
+
+.tittlesite > span {
+  color: #fff186;
+}
+
+/*article*/
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.systemarea {
+  background-color: rgba(33, 33, 33, 0.819);
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+}
+
+.heightarea,
+.weightarea,
+.racearea,
+.trainarea {
+  padding-top: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subheightarea,
+.subweightarea,
+.subtrainarea
+.acientyaninputarea {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.heigthvalue,
+.weightvalue,
+.trainvalue,
+.bonusvalue,
+.percentagevalue,
+.percentagevaluenegative,
+.acientyaninput {
+  margin-top: 5px;
+  border-radius: 15px;
+  border-color: none;
+  resize: none;
+  outline: none;
+  border-color: transparent;
+  padding-left: auto;
+  padding-right: auto;
+  text-align: center;
+}
+
+.valuetext {
+  margin-left: 5px;
+}
+
+.apenas {
+  color: rgb(207, 166, 232);
+  font-style: italic;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.resultarea {
+  margin-top: 20px;
+}
+
+/*races*/
+
+.racetext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.racebox {
+  display: flex;
+  padding-top: 10px;
+}
+
+#button {
+  margin-top: 30px;
+  background-color: rgba(15, 15, 15, 0.644);
+  border-radius: 15px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button:hover {
+  background-color: rgba(255, 255, 255, 0.624);
+  color: rgba(15, 15, 15, 0.644);
+}
+
+/*footer*/
+
+footer {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  object-fit: cover;
+}
+
+.tittletext {
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #fff186;
+}
